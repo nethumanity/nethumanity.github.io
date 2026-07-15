@@ -1,176 +1,231 @@
+/* =====================================================
+   Base
+===================================================== */
+
 body {
-
     margin: 0;
-
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-
-    background: #f5f5f5;
-
+    background: #fafafa;
     color: #333;
+    line-height: 1.7;
 }
 
-.site-header{
+/* =====================================================
+   Header / Navigation
+===================================================== */
 
-    background:white;
-
-    border-bottom:1px solid #e5e5e5;
-
-    padding:18px 40px;
-
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 18px 40px;
 }
-    
+
 .nav {
     display: flex;
-    gap: 24px;
+    gap: 28px;
+    align-items: center;
 }
-    
+
 .nav a {
-    color:#555;
+    color: #555;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: color .2s ease;
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    color: #1976d2;
 }
 
-.container {
+/* =====================================================
+   Layout
+===================================================== */
 
-    max-width: 900px;
-
-    margin: auto;
-
-    padding: 60px 20px;
+.container,
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 24px;
 }
+
+/* =====================================================
+   Typography
+===================================================== */
 
 h1 {
-
     text-align: center;
-
     font-size: 48px;
-
-    margin-bottom: 10px;
+    font-weight: 700;
+    margin: 0 0 16px;
 }
 
 .subtitle {
-
     text-align: center;
-
     font-size: 20px;
-
     color: #666;
-
-    margin-bottom: 60px;
-}
-
-.card{
-
-    border:1px solid #ececec;
-
-    box-shadow:none;
-
-    border-radius:16px;
-
-    padding:40px;
-
-}
-
-.card h2 {
-
-    margin-top: 0;
-}
-
-.card a {
-
-    display: inline-block;
-
-    margin-top: 15px;
-
-    text-decoration: none;
-
-    color: #0066cc;
-
-    font-weight: bold;
-}
-
-.card a:hover {
-
-    text-decoration: underline;
-}
-
-footer {
-
-    margin-top: 60px;
-
-    text-align: center;
-
-    color: #999;
-
-    font-size: 14px;
-}
-
-        
-
-header {
-    background: #1976d2;
-    color: white;
-    text-align: center;
-    padding: 48px 24px;
+    margin-bottom: 72px;
 }
 
 h2 {
-    margin-top: 48px;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 8px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 72px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 12px;
 }
 
-main {
-    max-width: 960px;
-    margin: auto;
-    padding: 24px;
+/* =====================================================
+   Card
+===================================================== */
+
+.card {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 32px;
 }
+
+.card h2 {
+    margin-top: 0;
+    border: none;
+    padding-bottom: 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #1976d2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================
+   Hero
+===================================================== */
 
 .hero {
     text-align: center;
 }
 
+/* =====================================================
+   Button
+===================================================== */
+
 .button {
     display: inline-block;
     margin-top: 24px;
     padding: 14px 28px;
-    background: #4CAF50;
+    background: #1976d2;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background .2s ease;
 }
 
 .button:hover {
-    background: #43A047;
+    background: #1565c0;
 }
+
+/* =====================================================
+   Screenshots
+===================================================== */
 
 .screenshots {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
-    gap: 20px;
-    margin-top: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
 }
 
 .screenshots img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 14px;
     border: 1px solid #ddd;
 }
 
+/* =====================================================
+   Lists
+===================================================== */
+
 ul {
-    padding-left: 20px;
+    padding-left: 24px;
 }
 
-footer {
-    margin-top: 60px;
-    padding: 24px;
+li {
+    margin-bottom: 10px;
+}
+
+/* =====================================================
+   Footer
+===================================================== */
+
+.site-footer {
+    margin-top: 100px;
+    padding: 40px 24px;
+    border-top: 1px solid #e5e5e5;
     text-align: center;
     color: #777;
-    font-size: 0.9rem;
-    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.site-footer h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.site-footer p {
+    margin: 6px 0;
+}
+
+.footer-links {
+    margin: 18px 0;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #1976d2;
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        padding: 18px 20px;
+    }
+
+    .nav {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 28px;
+    }
+
+    .container,
+    main {
+        padding: 40px 20px;
+    }
 }
