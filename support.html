@@ -70,10 +70,51 @@
             font-size: 0.9rem;
             border-top: 1px solid #ddd;
         }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .site-header {
+            background: #1976d2;
+            padding: 14px 20px;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 24px;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 24px;
+        }
     </style>
 </head>
 
 <body>
+
+<header class="site-header">
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="familyscheduler.html">Apps</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
 
 <header>
     <h1>FamilyScheduler サポート</h1>
@@ -146,8 +187,19 @@
 
 </main>
 
-<footer>
-    © NetHumanity
+<footer class="site-footer">
+    <h3>NET HUMANITY</h3>
+    <p>Independent Android App Studio</p>
+
+    <p class="footer-links">
+        <a href="index.html">Home</a> |
+        <a href="apps.html">Apps</a> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="support.html">Support</a> |
+        <a href="about.html">About</a>
+    </p>
+
+    <p>&copy; 2026 NET HUMANITY</p>
 </footer>
 
 </body>
